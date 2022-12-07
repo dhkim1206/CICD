@@ -50,4 +50,7 @@ jobs:
         
           ### 새로 추가한 부분 ###
       - name: Code Deploy
+        env:
+          AWS_ACCESS_KEY_ID: AKIASGQNGYKOFON2ORVP
+          AWS_SECRET_ACCESS_KEY: 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
         run: aws deploy create-deployment --application-name GoldenHour_code_deploy --deployment-config-name CodeDeployDefault.AllAtOnce --deployment-group-name goldenhour-server --s3-location bucket=$S3_BUCKET_NAME,bundleType=zip,key=$PROJECT_NAME/$GITHUB_SHA.zip
