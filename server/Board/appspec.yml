@@ -14,16 +14,15 @@ permissions:
     owner: ddohyung # object의 소유자 이름, 지정하지 않으면 원본 파일에 적용된 기존의 모든 소유자가 복사 작업 후에도 아무것도 변경되지 않습니다.
     group: ec2-user # object의 그룹 이름, 지정하지 않으면 원본 파일에 적용된 기존의 모든 소유자가 복사 작업 후에도 아무것도 변경되지 않습니다.
 
-#### 새로 추가한 부분 ###
-#hooks:
-#  ApplicationStart:
-#    - location: scripts/run_new_was.sh
-#      timeout: 180
-#      runas: ec2-user
-#    - location: scripts/health_check.sh
-#      timeout: 180
-#      runas: ec2-user
-#    - location: scripts/switch.sh
-#      timeout: 180
-#      runas: ec2-user
-
+### 새로 추가한 부분 ###
+hooks:
+  ApplicationStart:
+    - location: scripts/run_new_was.sh
+      timeout: 180
+      runas: ec2-user
+    - location: scripts/health_check.sh
+      timeout: 180
+      runas: ec2-user
+    - location: scripts/switch.sh
+      timeout: 180
+      runas: ec2-user
