@@ -4,7 +4,7 @@ version: 0.0
 os: linux
 files:
   - source: /
-    destination: /home/ec2-user/Borad/ #s3에서 받아온 프로젝트 이름
+    destination: /home/ec2-user/longstone/ #s3에서 받아온 프로젝트 이름
     overwrite: yes
 
 permissions:
