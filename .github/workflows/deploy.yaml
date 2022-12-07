@@ -41,9 +41,9 @@ jobs:
       - name: Configure AWS credentials
         uses: aws-actions/configure-aws-credentials@v1
         with:
-          aws-access-key-id: ${{ AKIASGQNGYKOFON2ORVP }}
-          aws-secret-access-key: ${{ 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 }}
-          aws-region: ${{ ap-northeast-2 }}
+          aws-access-key-id: AKIASGQNGYKOFON2ORVP
+          aws-secret-access-key: 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
+          aws-region: ap-northeast-2 
           
       - name: Upload to S3
         run: aws s3 cp --region ap-northeast-2 ./$GITHUB_SHA.zip s3://$S3_BUCKET_NAME/$GITHUB_SHA.zip
