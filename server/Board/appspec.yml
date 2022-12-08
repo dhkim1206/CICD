@@ -4,7 +4,7 @@ version: 0.0
 os: linux
 files:
   - source: / #전부
-    destination: /home/ec2-user/longstone/ #인스턴스에서 파일이 복사되어야 하는 위치 식별
+    destination: /home/ec2-user/Board/ #인스턴스에서 파일이 복사되어야 하는 위치 식별
     overwrite: yes #선택 값으로, 동일한 파일이 있을 경우 덮어쓰기 여부
 
 #정의한 파일이 인스턴스에 복사된 후 해당 파일에 권한이 어떻게 적용되어야 하는 지를 지정
