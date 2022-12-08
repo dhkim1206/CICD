@@ -1,3 +1,8 @@
+# application.yml
+
+logging-module:
+  version: 0.0.1
+
 spring:
   http:
     encoding:
@@ -20,3 +25,4 @@ jpa: ''
 whitelabel: ''
 properties: ''
 show_sql: 'true'
+
